@@ -1,16 +1,16 @@
 /* Function that checks if 2 values */
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log("PASSED! ",actual, "===",expected )
+    console.log("PASSED! ",actual, "===",expected);
     return true;
   } else {
-    console.log("Failed ", actual, "!==", expected)
+    console.log("Failed ", actual, "!==", expected);
     return false;
   }
 };
 
 /* count num of each items in all items */
-const countOnly = function (allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) {
   let countObj = {};
 
   for (let name in itemsToCount) {
@@ -24,12 +24,12 @@ const countOnly = function (allItems, itemsToCount) {
     }
   }
   
-  return countObj
-}
+  return countObj;
+};
 
 const firstNames = [
   "Karl",
-  "Salima", 
+  "Salima",
   "Agouhanna",
   "Fang",
   "Kavith",
