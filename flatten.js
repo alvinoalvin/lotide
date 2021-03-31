@@ -18,9 +18,26 @@ const eqArrays = function (actual, expected) {
 };
 
 /* Checks if 2 arrays are equal and return a message */
-const assertArraysEqual = function (actual, expected) {
-  if (eqArrays(actual, expected)) {
+const assertArraysEqual = function () {
+  if (eqArrays) {
     console.log("PASSED: " + actual + "===" + expected);
   }
   else { console.log("Failed: " + actual + "!==" + expected) }
 }
+
+const flatten = function (unlimited) {
+  let flat = []
+  for (let val of unlimited) {
+    if (Array.isArray(val)) {
+      for (innerVal of val) {
+        flat.push(innerVal)
+      }
+    }
+    else {
+      flat.push(val)
+    }
+  }
+  return flat;
+}
+
+console.log(flatten([1, 2, [3, 4, 1, 2], 5, [6]]  ))
