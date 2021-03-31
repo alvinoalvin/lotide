@@ -9,6 +9,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
+/* count num of each items in all items */
 const countOnly = function (allItems, itemsToCount) {
   let countObj = {};
 
