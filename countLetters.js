@@ -19,7 +19,7 @@ const countLetters = function(toCount) {
   //goes through each char
   for (let letter of toCount) {
     // if char is not already a key
-    if (!countObj[letter]) {
+    if (!countObj[letter] && letter !== ' ') {
       // go through string and count chars
       countObj[letter] = 0;
       for (let character of toCount) {
