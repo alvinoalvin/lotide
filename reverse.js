@@ -1,12 +1,12 @@
-stringArgs = process.argv.splice(2)
+let stringArgs = process.argv.splice(2);
 
-reverse_string = function (stringArgs) {
+const reverse_string = (stringArgs) => {
   stringArgs.forEach(word => {
-    tempString = "";
+    let tempString = "";
     for (let i = word.length - 1; i >= 0; i--) {
       tempString += word[i];
     }
-    console.log(tempString)
+    console.log(tempString);
   });
 };
 

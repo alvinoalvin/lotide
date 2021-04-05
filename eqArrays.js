@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     return true;
   } else {
@@ -6,7 +6,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const eqArrays = function (actual, expected) {
+const eqArrays = function(actual, expected) {
   for (let i = 0; i < actual.length; i++) {
     if (!assertEqual(actual[i], expected[i])) {
       return false;
