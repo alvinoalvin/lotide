@@ -1,6 +1,6 @@
 {
   "name": "@alvinoalvin/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "library of useful functions",
   "main": "index.js",
   "directories": {
